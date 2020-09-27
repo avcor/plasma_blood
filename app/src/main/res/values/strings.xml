@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">plasma blood</string>
+    <string name="plasma_blood">PLASMA BLOOD</string>
+    <string name="blood">Blood</string>
+    <string name="plasma">Plasma</string>
+    <string name="both">Both</string>
+</resources>

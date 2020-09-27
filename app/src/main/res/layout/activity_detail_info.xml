@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.plasmabloodd.detail_info"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/top_design"/>
+
+    <TextView
+        android:id="@+id/plasma_blood_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato"
+        android:text="PLASMA BLOOD"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        />
+    <ImageView
+        android:id="@+id/u_iv"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/plasma_blood_tv"
+        android:layout_marginTop="50sp"
+        />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_below="@+id/u_iv"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginRight="40sp"
+        android:layout_marginTop="20dp"
+        app:cardBackgroundColor="@color/grey"
+        android:background="@drawable/all_side_corner">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/u_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/both"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato"
+                android:textSize="20sp"
+                />
+            <TextView
+                android:id="@+id/u_city_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/both"
+                android:textColor="@color/black"
+                android:fontFamily="@font/lato"
+                android:textSize="20sp"/>
+            <TextView
+                android:id="@+id/u_mob_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/both"
+                android:fontFamily="@font/lato"
+                android:textColor="@color/black"
+                android:textSize="20sp"/>
+<!--            <TextView-->
+<!--                android:id="@+id/U_lastdonated_tv"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="last donated"-->
+<!--                android:fontFamily="@font/lato"-->
+<!--                android:textSize="20sp"/>-->
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

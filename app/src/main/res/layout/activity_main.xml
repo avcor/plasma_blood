@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:orientation="vertical">
+    <TextView
+        android:id="@+id/plasma_blood_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato"
+        android:text="PLASMA BLOOD"
+        android:textColor="@color/dark_purple"
+        android:textSize="25dp"
+        android:layout_gravity="center"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textSize="15dp"
+        android:hint="search by city"
+        android:background="@color/white"
+        android:layout_margin="15dp"
+        android:drawableStart="@drawable/loupe"
+        android:paddingLeft="10dp"
+        android:paddingBottom="5sp"
+        android:drawablePadding="10dp"
+        />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/inner_shadow"
+        android:paddingTop="10sp"
+        android:paddingLeft="20sp"
+        android:paddingRight="20sp"
+        android:paddingBottom="10sp"
+        android:layout_marginStart="15sp"
+        android:layout_marginEnd="15sp"
+        android:layout_weight="1"
+        android:layout_marginBottom="10sp"
+        />
+       <com.ismaeldivita.chipnavigation.ChipNavigationBar
+           android:id="@+id/nav_bar"
+           android:layout_width="match_parent"
+           android:layout_height="45sp"
+           android:layout_gravity="bottom"
+           android:background="@color/dark_purple"
+           app:cnb_menuResource="@menu/nav_menu"
+           app:cnb_unselectedColor="@color/white"
+           app:cnb_textAppearance="@font/merriweather_light"
+           />
+   </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/plus"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>

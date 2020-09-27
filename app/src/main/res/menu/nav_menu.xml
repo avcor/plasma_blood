@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/nav_blood"
+        android:title="@string/blood"
+        android:icon="@drawable/blood"
+        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/black"
+        app:cnb_backgroundColor="@color/gold"
+
+        />
+    <item
+        android:id="@+id/nav_plasma"
+        android:title="@string/plasma"
+        android:icon="@drawable/plasma"
+        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/black"
+        app:cnb_backgroundColor="@color/gold"
+        />
+    <item
+        android:id="@+id/nav_both"
+        android:title="@string/both"
+        android:icon="@drawable/both"
+        app:cnb_iconColor="@color/black"
+        app:cnb_textColor="@color/black"
+        app:cnb_backgroundColor="@color/gold"
+        />
+
+
+</menu>

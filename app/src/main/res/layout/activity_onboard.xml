@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboard"
+    android:background="@color/dark_purple"
+    >
+
+    <TextView
+        android:id="@+id/plasma_blood_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/lato"
+        android:text="PLASMA BLOOD"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:visibility="gone"
+        />
+
+
+        <ImageView
+            android:id="@+id/search_img"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@drawable/pic_search"
+            android:src="@drawable/pic_search"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:elevation="20dp"
+            />
+
+    <RelativeLayout
+        android:id="@+id/r_u_option"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/recipient_butt"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/merriweather_sans"
+            android:text="recipient"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="22dp" />
+        <TextView
+            android:id="@+id/or"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="or"
+            android:textSize="25dp"
+            android:textColor="@color/white"
+            android:layout_above="@+id/recipient_butt"
+            android:layout_marginBottom="7dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:id="@+id/donor_butt"
+            android:layout_width="110dp"
+            android:layout_height="50dp"
+            android:layout_above="@+id/or"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/button_background"
+            android:fontFamily="@font/merriweather_sans"
+            android:text="donor"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textSize="22dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/donor_butt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="35dp"
+            android:fontFamily="@font/merriweather_light"
+            android:text="Are you"
+            android:textColor="@color/white"
+            android:textSize="45dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/form_fill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:background="@drawable/top_round_corner"
+        android:visibility="gone"
+        android:clickable="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:textColor="@color/black"
+            android:text="Enter details"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:fontFamily="@font/merriweather_light"
+            />
+        <EditText
+            android:id="@+id/name_edt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="name : "
+            android:textColorHint="@color/black"
+            android:textSize="15dp"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+
+        <EditText
+            android:id="@+id/city_edt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="city : "
+            android:textSize="15dp"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+
+
+        <EditText
+            android:id="@+id/mob_edt"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:hint="mob : "
+            android:textSize="15dp"
+            android:inputType="number"
+            android:textColorHint="@color/black"
+            android:fontFamily="@font/merriweather_light"
+            android:background="@drawable/all_side_corner"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="50dp"
+            android:paddingLeft="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="choose"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:fontFamily="@font/merriweather_light"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="30dp"
+            />
+
+        <RadioGroup
+            android:id="@+id/rd_grp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:checkedButton="@id/blood">
+            <RadioButton
+                android:id="@+id/blood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Blood"
+                android:textSize="15dp"
+                android:fontFamily="@font/merriweather_light"
+                />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Plasma"
+                android:fontFamily="@font/merriweather_light"
+                android:textSize="15dp"
+                android:id="@+id/plasma"
+                />
+            <RadioButton
+                android:id="@+id/both"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:text="Both"
+                android:textSize="15dp"
+                android:fontFamily="@font/merriweather_light"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/done_butt"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:background="@drawable/button_background"
+            android:text="DONE"
+            android:fontFamily="@font/merriweather_sans"
+            android:textSize="18dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="powered by more blood"
+            android:textColor="@color/black"
+            android:textSize="10dp"
+            android:fontFamily="@font/merriweather_light"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
